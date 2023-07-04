@@ -1,0 +1,340 @@
+/* css reset  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/* Typography */
+
+
+.header__title{
+
+
+
+}
+
+
+/* Typography ends here */
+
+.months__title{
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+}
+.months__title:after{
+    width: 300px;
+    content: "";
+    background-color: coral;
+    height: 5px;
+    position: absolute;
+     left: 50%; 
+    bottom: -50%;
+    transform: translateX(-50%);
+
+
+}
+
+
+
+body{
+    /* background: linear-gradient(); */
+    background: rgb(161,149,149);
+    background: linear-gradient(90deg, rgba(161,149,149,1) 0%, rgba(151,180,191,1) 35%, rgba(139,154,157,1) 100%);
+min-height: 100vh;
+color: #ffffff;
+position: relative;
+}
+
+
+/* LAYOUTS */
+.header{
+    background-color:#0ba9e6 ;
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    text-align: center;
+    padding: 20px 30px;
+    top: 0;
+    left: 0;
+}
+
+/* MAIN STYLES */
+.main{
+    margin-block-start: 70px;
+}
+/* HERO STYLES  */
+
+.hero{
+    padding-top: 50px;
+}
+.hero__image{
+    width: 100%;
+    height: auto;
+
+}
+.hero__container{
+    border: 1px solid coral;
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 300px;
+}
+
+
+
+.months__container{
+    border: 1px solid coral;
+    max-width: 1100px;
+    /* margin: auto;
+    min-width: 300px; */
+
+   
+}
+/* Columns/ rows styles */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:  10px 30px;
+    margin: 2em auto;
+    min-width: 300px;
+    /* padding: 15px 0 10px 0; */
+    
+
+}
+/* cols styling */
+.col-4, .col-5, .col-6{
+    flex-basis: 33.33%;
+    background-color: #e6370b;
+    color: #97e60b;
+    padding: 30px 0;
+    margin-right: 20px;
+    text-align: center;
+    align-self: flex-start;
+    border-radius: 10px 0 10px 10px;
+    
+}
+
+
+/* box /columns box-shadow */
+.box:hover{
+    box-shadow: 5px 6px 30px 1px rgba(145,137,145,0.75);
+    -webkit-box-shadow: 5px 6px 30px 1px rgba(145,137,145,0.75);
+    -moz-box-shadow: 5px 6px 30px 1px rgba(145,137,145,0.75);
+    transform: translateY(-5px);
+    border-radius: 0;
+
+}
+
+/* figure */
+figcaption{
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 13.5px;
+}
+/* figure end
+
+
+*/
+
+.col-7,.col-8,.col-9{
+    flex-basis:33.3333333333%;
+    background-color: #0b7ae6;
+    color: #dae2eb;
+    padding: 30px 0;
+    margin-right: 20px;
+    text-align: center;
+    align-self: flex-start;
+    border-radius: 10px 0 10px 10px;
+}
+.col-10,.col-11,.col-12{
+    flex-basis:33.3333333333%;
+    background-color:#ed12d6;
+    color: #cfd0e6;
+    padding: 30px 0;
+    margin-right: 20px;
+    text-align: center;
+    align-self: flex-start;
+    border-radius: 10px 0 10px 10px;
+}
+
+
+
+
+.hero__content{
+    flex-basis: 55%;
+    padding: 40px 0;
+    
+}
+
+.hero__title{
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.hero__subtitle{
+    margin: 15px 0;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-transform: capitalize;
+
+
+}
+.hero__image{
+    flex-basis: 45%;
+    border-radius: 15px;
+}
+.hero__btn{
+    background-color: coral;
+    width: 200px;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 700;
+    display: inline-block;
+    /* margin-top: 3em; */
+    
+}
+.hero__btn:hover{
+    background-color: #e6370b;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA STYLING  */
+/* BREAK-POINTS */
+/*  Extra small screen starts here  */
+
+@media  screen and (max-width:576px) {
+
+    .header{
+        height: auto; 
+        padding: 15px;
+    }
+    .header__title{
+        font-size: 1.25rem;
+    }
+    .hero__container{
+        flex-direction: column;
+    }
+
+
+}
+/*  extra small screen ends here  */
+
+/* Small screen starts  */
+@media screen and (max-width:768px){
+    .header{
+        height: auto; 
+        padding: 15px;
+    }
+    .header__title{
+        font-size: 1.25rem;
+    }
+
+
+}
+/* Small screen ends  */
+
+
+
+
+/* medium screen starts here  */
+@media screen and (max-width:992px){
+
+    .header__title{
+        /* word-wrap: break-word; */
+        text-align: center;
+        font-size: 1.6rem;
+    }
+}
+
+
+
+
+/*  */
+
+
+
+    
+
+
